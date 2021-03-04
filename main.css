@@ -1,0 +1,98 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
+
+header {
+    background-color: lightgray;
+    width: 100%;
+    background-color: lightsalmon;
+    text-align: center;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+header .subtitle {
+    font-size: 125%;
+    font-style: italic;
+}
+
+.row {
+    width: 100%;
+    background-color: lightskyblue;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: lightcyan;
+    box-sizing: border-box;
+    display: none;
+    
+}
+
+.main-content {
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+    padding: 30px 0;
+    text-align: center ;
+    color: rgba(0,0,0,.7);
+}
+
+.cards {
+    width: 80%;
+    margin: 0 auto;
+    background-color: lightyellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-grow: 1;
+    width: 33%;
+    height: 350px;
+    background-color: lightseagreen;
+    transition: all 0.5s;
+    position:relative;
+}
+
+.card:nth-child(1) {background-color:lime;}
+.card:nth-child(2) {background-color:linen;}
+.card:nth-child(3) {background-color:magenta;}
+.card:nth-child(4) {background-color:maroon;}
+.card:nth-child(5) {background-color:mediumaquamarine;}
+.card:nth-child(6) {background-color:mediumblue;}
+.card:nth-child(7) {background-color:mediumorchid;}
+.card:nth-child(7) {background-color:mediumpurple;}
+.card:nth-child(9) {background-color:mediumseagreen;}
+
+.card:hover{
+    background-color: rgba(0,0,0,.2);
+}
+
+.card:hover > .caption {
+    opacity: 1;
+    font-size: 2em;
+}
+
+.card .caption {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    opacity: 0;
+    font-size: small;
+    transition: all 0.5s;
+} 
+
