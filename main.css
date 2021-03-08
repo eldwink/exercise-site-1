@@ -32,8 +32,7 @@ header .subtitle {
     padding: 10px 20px;
     background-color: lightcyan;
     box-sizing: border-box;
-    display: none;
-    
+    display: flex;
 }
 
 .main-content {
@@ -41,15 +40,8 @@ header .subtitle {
     box-sizing: border-box;
 }
 
-footer {
-    background-color: lightgoldenrodyellow;
-    padding: 30px 0;
-    text-align: center ;
-    color: rgba(0,0,0,.7);
-}
-
 .cards {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     background-color: lightyellow;
     display: flex;
@@ -63,6 +55,23 @@ footer {
     background-color: lightseagreen;
     transition: all 0.5s;
     position:relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        display: block;
+    }
+    .card {
+        width: 50%;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+        height: 250px;
+    }
 }
 
 .card:nth-child(1) {background-color:lime;}
@@ -96,3 +105,9 @@ footer {
     transition: all 0.5s;
 } 
 
+footer {
+    background-color: lightgoldenrodyellow;
+    padding: 30px 0;
+    text-align: center ;
+    color: rgba(0,0,0,.7);
+}
